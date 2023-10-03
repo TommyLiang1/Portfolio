@@ -1,5 +1,65 @@
 .contact-container {
+  height: 800px;
   text-align: center;
-  height: 600px;
-  background-color: #666;
+  margin: auto;
+  margin-top: 300px;
+}
+
+.contact-form-container {
+  margin-top: 2rem;
+  width: 600px;
+  padding: 1rem;
+  margin: auto;
+  display: grid;
+  align-items: center;
+  background-color: #fffefd;
+  border-radius: 1rem;
+}
+
+.contact-title {
+  color: rgb(0, 156, 218);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: left;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.contact-input, .contact-message, .contact-button {
+  width: 500px;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: Poppins;
+  background-color: rgb(247, 246, 254);
+}
+
+.contact-input {
+  border: none;
+}
+
+.contact-input:focus {
+  outline: none;
+}
+
+.contact-message {
+  height: 200px;
+  resize: none;
+  border: none;
+}
+
+.contact-message:focus {
+  outline: none;
+}
+
+.contact-button {
+  font-size: 1.2rem;
+  background-color: rgb(188, 253, 253);
+  border: none;
+}
+
+.contact-button:hover {
+  box-shadow: 0px 5px 10px #999;
 }
