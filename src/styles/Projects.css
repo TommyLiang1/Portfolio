@@ -1,5 +1,77 @@
-.projects-container {
+.projects-container {  
+  width: 1000px;
+  margin: auto;
+  margin-bottom: 500px;
+}
+
+.project-title {
+  color: rgb(0, 156, 218);
+  font-weight: bold;
+  font-size: 16px;
+  text-align: left;
+}
+
+.project-list {
+  display: grid;
+  place-items: center;
+  margin-top: 4rem;
+}
+
+.project-project {
+  display: flex;
+  margin-top: 7rem;
+}
+
+.project-img {
+  width: 600px;
+  height: 350px;
+  border-radius: 5%;
+}
+
+.img-right {
+  margin-left: 5rem;
+}
+
+.img-left {
+  margin-right: 5rem;
+}
+
+.project-wrapper {
+  display: grid;
+  align-items: center;
   text-align: center;
-  height: 600px;
-  background-color: #555;
+}
+
+.portfolio-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.portfolio-desc {
+  width: 300px;
+  margin-top: 20px;
+  color: #666
+}
+
+.portfolio-framework {
+  margin-top: 20px;
+}
+
+.framework {
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.portfolio-code-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.portfolio-github-icon {
+  width: 25px;
+  margin-left: 5px;
 }

@@ -1,5 +1,39 @@
 .about-container {
-  text-align: center;
-  height: 600px;
-  background-color: #444;
+  height: 900px;
+  display: grid;
+  place-items: center;
+}
+
+.about-wrapper {
+  display: flex;
+}
+
+.about-img {
+  width: 400px;
+  height: 350px;
+  margin-right: 25px;
+  border-radius: 5%;
+}
+
+.about-text {
+  width: 450px;
+  text-align: left;
+  margin-left: 25px;
+}
+
+.about-me {
+  color: rgb(0, 156, 218);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.about-title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.about-desc {
+  margin-top: 15px;
+  color: #666;
 }

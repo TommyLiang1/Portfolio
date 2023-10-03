@@ -1,10 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class Navbar extends Component {
   render() {
     return (
-      <nav className='nav'>
-        <a href="/" className='nav-title'>Tommy</a>
+      <nav className="nav">
+        <a href="/" className="nav-title">
+          Tommy
+        </a>
         <ul>
           <li>
             <a href="#home">Home</a>
@@ -20,6 +22,6 @@ export default class Navbar extends Component {
           </li>
         </ul>
       </nav>
-    )
+    );
   }
 }
