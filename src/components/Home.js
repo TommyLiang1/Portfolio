@@ -28,9 +28,6 @@ const Home = () => {
         </div>
         <img className="home-img" src="#" alt="" />
       </div>
-
-      {/* Links to linkedin and github */}
-      {/* Tech Stack I'm familiar with */}
     </div>
   );
 };

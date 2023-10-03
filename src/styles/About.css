@@ -1,24 +1,26 @@
 .about-container {
-  height: 900px;
   display: grid;
   place-items: center;
+  margin: 2rem 0rem;
 }
 
 .about-wrapper {
-  display: flex;
+  display: grid;
+  align-items: center;
 }
 
 .about-img {
-  width: 400px;
-  height: 350px;
-  margin-right: 25px;
+  max-width: 400px;
+  min-height: 350px;
   border-radius: 5%;
+  margin: auto;
 }
 
 .about-text {
-  width: 450px;
+  min-width: 400px;
   text-align: left;
   margin-left: 25px;
+  padding: 20px;
 }
 
 .about-me {
@@ -36,4 +38,19 @@
 .about-desc {
   margin-top: 15px;
   color: #666;
+}
+
+@media (min-width: 900px) {
+  .about-wrapper {
+    margin: 15rem 0rem;
+    display: flex;
+  }
+
+  .about-text {
+    max-width: 500px;
+  }
+  
+  .about-img {
+    margin-right: 2rem;
+  }
 }

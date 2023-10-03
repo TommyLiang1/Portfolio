@@ -1,13 +1,11 @@
 .contact-container {
-  height: 800px;
   text-align: center;
   margin: auto;
-  margin-top: 300px;
 }
 
 .contact-form-container {
   margin-top: 2rem;
-  width: 600px;
+  max-width: 600px;
   padding: 1rem;
   margin: auto;
   display: grid;
@@ -62,4 +60,10 @@
 
 .contact-button:hover {
   box-shadow: 0px 5px 10px #999;
+}
+
+@media (min-width: 900px) {
+  .contact-container {
+    margin: 12rem 0rem;
+  }
 }

@@ -18,26 +18,91 @@ body {
   width: 100%;
 }
 
-.nav ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.nav a {
-  color: inherit;
-  text-decoration: none;
-}
-
 .nav-title {
   font-size: 30px;
   font-weight: bold;
 }
 
-#home, #about, #projects, #contact {
+.nav-links ul, .nav-links-expanded ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links li, .nav-links-expanded li {
+  list-style: none;
+}
+
+.nav-links li a, .nav-links-expanded li a {
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+.nav-links li:hover, .nav-links-expanded li:hover {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+#home,
+#about,
+#projects,
+#contact {
   scroll-margin-top: 78px;
+}
+
+.nav-icon {
+  position: absolute;
+  top: 1.7rem;
+  right: 1rem;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .nav-icon {
+    display: flex;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-expanded {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-links-expanded ul {
+    width: 100%;
+    flex-direction: column;
+    display: block;
+  }
+
+  .nav-links-expanded li {
+    text-align: center;
+  }
+
+  .nav-links-expanded li a {
+    padding: .5rem;
+  }
 }

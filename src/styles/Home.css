@@ -1,18 +1,18 @@
 .home-container {
   text-align: center;
-  height: 800px;
-  margin-top: 78px;
+  margin: 5rem 0rem;
   display: grid;
   place-items: center;
 }
 
 .home-main {
-  display: flex;
+  display: block;
 }
 
 .home-text {
-  width: 500px;
+  max-width: 400px;
   text-align: left;
+  padding: 25px;
 }
 
 .home-title {
@@ -37,8 +37,23 @@
 }
 
 .home-img {
-  width: 400px;
-  height: 350px;
-  margin-left: 25px;
+  width: 100%;
+  max-width: 400px;
+  min-height: 350px;
   border-radius: 5%;
+}
+
+@media (min-width: 900px) {
+  .home-main {
+    display: flex;
+    margin: 10rem 0rem;
+  }
+
+  .home-img {
+    margin: 0 5rem;
+  }
+
+  .home-text {
+    min-width: 400px;
+  }
 }
