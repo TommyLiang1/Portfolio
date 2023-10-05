@@ -1,18 +1,17 @@
 .home-container {
-  text-align: center;
-  margin: 5rem 0rem;
-  display: grid;
-  place-items: center;
+  margin: 5rem auto;
 }
 
 .home-main {
-  display: block;
+  display: grid;
+  gap: 3rem;
+  place-items: center;
 }
 
 .home-text {
   max-width: 400px;
+  margin: auto;
   text-align: left;
-  padding: 25px;
 }
 
 .home-title {
@@ -22,12 +21,12 @@
 
 .home-desc {
   color: #666;
-  margin-top: 15px;
+  margin-top: 1rem;
 }
 
 .home-links {
   display: flex;
-  margin-top: 25px;
+  margin-top: 1.5rem;
 }
 
 .home-icon {
@@ -38,22 +37,25 @@
 
 .home-img {
   width: 100%;
-  max-width: 400px;
-  min-height: 350px;
-  border-radius: 5%;
+  max-width: 700px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 5%;    
 }
 
 @media (min-width: 900px) {
+  .home-container {
+    max-width: 1200px;
+    padding: 15rem 0rem;
+    display: grid;
+    place-items: center;
+  }
+
   .home-main {
-    display: flex;
-    margin: 10rem 0rem;
+    grid-template-columns: repeat(2, 500px);
   }
 
   .home-img {
-    margin: 0 5rem;
-  }
-
-  .home-text {
-    min-width: 400px;
+    max-width: 700px;
   }
 }

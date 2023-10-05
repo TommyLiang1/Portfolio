@@ -1,19 +1,19 @@
 .about-container {
-  display: grid;
-  place-items: center;
-  margin: 2rem 0rem;
+  margin: 2rem auto;
 }
 
 .about-wrapper {
   display: grid;
-  align-items: center;
+  gap: 1rem;
+  place-items: center;
 }
 
 .about-img {
-  max-width: 400px;
-  min-height: 350px;
+  width: 100%;
+  max-width: 500px;
+  height: 350px;
+  object-fit: cover;
   border-radius: 5%;
-  margin: auto;
 }
 
 .about-text {
@@ -41,9 +41,14 @@
 }
 
 @media (min-width: 900px) {
+  .about-container {
+    max-width: 1000px;
+    padding: 15rem 0rem;
+  }
+
   .about-wrapper {
-    margin: 15rem 0rem;
-    display: flex;
+    grid-template-columns: repeat(2, 500px);
+    gap: 4rem;
   }
 
   .about-text {

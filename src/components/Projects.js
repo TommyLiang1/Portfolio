@@ -32,11 +32,15 @@ const Projects = () => {
               <img className="portfolio-github-icon" src={GitHubIcon} alt="" />
             </a>
           </div>
-          <img className="project-img img-right" src={MendingImage} alt="" />
+          <div>
+            <img className="project-img img-right" src={MendingImage} alt="" />
+          </div>
         </div>
 
         <div className="project-project">
-          <img className="project-img img-left" src="#" alt="" />
+          <div>
+            <img className="project-img img-left" src={MendingImage} alt="" />
+          </div>
           <div className="project-wrapper">
             <div className="portfolio-title">Spotify++</div>
             <div className="portfolio-desc">
@@ -81,7 +85,13 @@ const Projects = () => {
               <img className="portfolio-github-icon" src={GitHubIcon} alt="" />
             </a>
           </div>
-          <img className="project-img img-right" src={ArtGalleryImage} alt="" />
+          <div>
+            <img
+              className="project-img img-right"
+              src={ArtGalleryImage}
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>

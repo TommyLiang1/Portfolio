@@ -1,18 +1,14 @@
-.projects-container {  
-  padding: 20px;
-}
-
 .project-title {
   color: rgb(0, 156, 218);
   font-weight: bold;
   font-size: 1.5rem;
   text-align: center;
+  padding: 3rem 0rem;
 }
 
 .project-list {
   display: grid;
   place-items: center;
-  margin-top: 1rem;
 }
 
 .project-project {
@@ -25,8 +21,9 @@
 }
 
 .project-img {
-  max-width: 450px;
-  min-height: 350px;
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
   border-radius: 5%;
   margin: 1.5rem 0rem;
 }
@@ -44,18 +41,13 @@
 }
 
 .portfolio-desc {
-  margin-top: 20px;
-  margin: auto;
+  margin: 1.5rem auto;
   color: #666;
-  padding: 20px;
-}
-
-.portfolio-framework {
-  margin-top: 20px;
+  padding: 1.5rem;
 }
 
 .framework {
-  margin: 0 1rem;
+  margin: auto 1rem;
   font-weight: bold;
 }
 
@@ -65,7 +57,7 @@
   font-weight: bold;
   display: flex;
   margin: auto;
-  margin-top: 2rem;
+  margin: 2rem auto;
 }
 
 .portfolio-github-icon {
@@ -73,10 +65,15 @@
   margin-left: 5px;
 }
 
+.img-left {
+  margin-top: 1rem;
+}
+
 @media (min-width: 900px) {
   .projects-container {
     max-width: 1100px;
-    margin: auto;
+    padding: 5rem auto;
+    margin: 10rem auto;
   }
 
   .project-title {
@@ -84,17 +81,15 @@
   }
 
   .project-list {
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .project-project {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
   }
   
-  .project-project:not(:first-child) {
-    margin-top: 7rem;
-  }
-
   .project-wrapper {
     max-width: 500px;
   }

@@ -1,6 +1,7 @@
 import React from "react";
 import LinkedInIcon from "../img/linkedin.svg";
 import GitHubIcon from "../img/github.svg";
+import MendingImage from "../img/mending.png";
 
 const Home = () => {
   return (
@@ -26,7 +27,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-        <img className="home-img" src="#" alt="" />
+        <img className="home-img" src={MendingImage} alt="" />
       </div>
     </div>
   );

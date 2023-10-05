@@ -1,22 +1,20 @@
 import React, { useState } from "react";
 
 const Navbar = () => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
 
   return (
     <nav className="nav">
       <div className="nav-title">Tommy</div>
-      <a
-        href="#"
-        className="nav-icon"
-        onClick={() => setNavbarOpen((prev) => !prev)}
-      >
-        <span className="nav-bar"></span>
-        <span className="nav-bar"></span>
-        <span className="nav-bar"></span>
-      </a>
-      <div className={navbarOpen ? "nav-links" : "nav-links-expanded"}>
-        <ul>
+      <div>
+        <ul
+          id="nav-links"
+          className={clicked ? "#nav-links active" : "#nav-links"}
+        >
           <li>
             <a href="#home">Home</a>
           </li>
@@ -30,6 +28,13 @@ const Navbar = () => {
             <a href="#contact">Contact</a>
           </li>
         </ul>
+      </div>
+      <div className="mobile">
+        <i
+          id="mobile-icon"
+          onClick={handleClick}
+          className={clicked ? "fas fa-times" : "fas fa-bars"}
+        ></i>
       </div>
     </nav>
   );

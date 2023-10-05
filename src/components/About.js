@@ -1,10 +1,11 @@
 import React from "react";
+import MendingImage from "../img/mending.png";
 
 const About = () => {
   return (
     <div id="about" className="about-container">
       <div className="about-wrapper">
-        <img className="about-img" src="#" alt="" />
+        <img className="about-img" src={MendingImage} alt="" />
         <div className="about-text">
           <div className="about-me">ABOUT ME</div>
           <div className="about-title">
