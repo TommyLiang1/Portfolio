@@ -21,18 +21,18 @@
 }
 
 .project-img {
-  width: 100%;
+  width: 90%;
   height: 450px;
   object-fit: cover;
   border-radius: 5%;
-  margin: 1.5rem 0rem;
+  margin: 1.5rem 2.5rem;
 }
 
 .project-wrapper {
   display: grid;
   align-items: center;
   text-align: center;
-  min-width: 400px;
+  min-width: 500px;
 }
 
 .portfolio-title {
@@ -65,11 +65,7 @@
   margin-left: 5px;
 }
 
-.img-left {
-  margin-top: 1rem;
-}
-
-@media (min-width: 900px) {
+@media (min-width: 1100px) {
   .projects-container {
     max-width: 1100px;
     padding: 5rem auto;
@@ -94,11 +90,15 @@
     max-width: 500px;
   }
 
+  .project-img {
+    width: 550px; 
+  }
+
   .img-right {
-    margin-left: 5rem;
+    margin-left: 10rem;
   }
 
   .img-left {
-    margin-right: 5rem;
+    margin-right: 10rem;
   }
 }

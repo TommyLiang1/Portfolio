@@ -1,17 +1,12 @@
 .contact-form-container {
-  max-width: 600px;
-  padding: 1rem;
+  max-width: 500px;
   margin: auto;
-  display: grid;
-  align-items: center;
-  background-color: #fffefd;
-  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-title {
   max-width: 500px;
-  margin: auto;
-  width: 100%;
   color: rgb(0, 156, 218);
   font-weight: bold;
   font-size: 1.5rem;
@@ -19,9 +14,7 @@
 }
 
 .contact-input, .contact-message, .contact-button {
-  max-width: 500px;
-  width: 100%;
-  margin: auto;
+  width: 500px;
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 10px;
@@ -39,7 +32,7 @@
 }
 
 .contact-message {
-  height: 200px;
+  min-height: 200px;
   resize: none;
   border: none;
 }
@@ -56,11 +49,4 @@
 
 .contact-button:hover {
   box-shadow: 0px 5px 10px #999;
-}
-
-@media (min-width: 900px) {
-  .contact-container {
-    margin: 12rem 0rem;
-    padding-bottom: 3rem;
-  }
 }
