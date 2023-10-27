@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Recipe App",
+    "desc": "This recipe app allows users to look up recipes from theMealDB API and save their favorite recipes",
+    "frameworks": ["React", "CSS", "TheMealDB API"],
+    "leftImg": "",
+    "rightImg": "/images/recipeapp.jpg",
+    "githubUrl": "https://github.com/TommyLiang1/Recipe-App",
+    "demoUrl": "https://tommyliang1.github.io/Recipe-App/"
+  },
+  {
+    "id": 2,
+    "title": "Mending",
+    "desc": "Mending is an online platform that allows users to communicate and share their mental health stories. This website provides an interface for posting, replying, checking out stress relievers, and user profiles.",
+    "frameworks": ["React", "PostgreSQL", "CSS"],
+    "leftImg": "/images/mending.png",
+    "rightImg": "",
+    "githubUrl": "https://github.com/TommyLiang1/Capstone_Final_Project",
+    "demoUrl": ""
+  },
+  {
+    "id": 3,
+    "title": "Spotify++",
+    "desc": "Spotify++ is a web app that allows users create and manage their own playlist of mp3 files. This website is created with AWS Amplify and S3.",
+    "frameworks": ["React", "AWS", "CSS"],
+    "leftImg": "",
+    "rightImg": "/images/mending.png",
+    "githubUrl": "https://github.com/TommyLiang1/cloud_computing_project",
+    "demoUrl": ""
+  },
+  {
+    "id": 4,
+    "title": "Google Sprint Program",
+    "desc": "This web app is an art gallery that hosts artists and their artworks for users to see. This website provides an art gallery, singular image modal, and virtual reality interface. (Created on Google Cloud)",
+    "frameworks": ["HTML", "CSS", "JavaScript"],
+    "leftImg": "/images/artgallery.jpg",
+    "rightImg": "",
+    "githubUrl": "https://github.com/TommyLiang1/summer22-sps-28",
+    "demoUrl": ""
+  }
+]

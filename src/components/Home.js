@@ -1,7 +1,7 @@
 import React from "react";
-import LinkedInIcon from "../img/linkedin.svg";
-import GitHubIcon from "../img/github.svg";
-import MendingImage from "../img/mending.png";
+import LinkedInIcon from "../images/linkedin.svg";
+import GitHubIcon from "../images/github.svg";
+import MendingImage from "../images/mending.png";
 
 const Home = () => {
   return (

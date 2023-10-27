@@ -1,3 +1,9 @@
+.project-wrapper {
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
 .project-title {
   color: rgb(0, 156, 218);
   font-weight: bold;
@@ -6,33 +12,13 @@
   padding: 3rem 0rem;
 }
 
-.project-list {
-  display: grid;
-  place-items: center;
-}
-
-.project-project {
-  display: grid;
-  place-items: center;
-}
-
-.project-project:nth-child(3) {
-  margin-top: 1.5rem;
-}
-
-.project-img {
+.portfolio-img {
   width: 90%;
+  max-width: 550px;
   height: 450px;
   object-fit: cover;
   border-radius: 5%;
-  margin: 1.5rem 2.5rem;
-}
-
-.project-wrapper {
-  display: grid;
-  align-items: center;
-  text-align: center;
-  min-width: 500px;
+  margin: 1.5rem auto;
 }
 
 .portfolio-title {
@@ -44,61 +30,45 @@
   margin: 1.5rem auto;
   color: #666;
   padding: 1.5rem;
+  max-width: 500px;
 }
 
-.framework {
+.portfolio-framework {
   margin: auto 1rem;
   font-weight: bold;
 }
 
-.portfolio-code-link {
+.portfolio-link-wrapper {
+  display: flex;
+  margin: auto;
+  width: 50%;
+}
+
+.portfolio-code-link, .portfolio-demo-link {
   text-decoration: none;
   color: black;
   font-weight: bold;
   display: flex;
-  margin: auto;
+  justify-content: center;
   margin: 2rem auto;
+  transition: color 250ms ease-in;
+}
+
+.portfolio-code-link:hover, .portfolio-demo-link:hover {
+  color: #777;
 }
 
 .portfolio-github-icon {
   width: 25px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 @media (min-width: 1100px) {
-  .projects-container {
-    max-width: 1100px;
-    padding: 5rem auto;
-    margin: 10rem auto;
-  }
-
-  .project-title {
-    text-align: left;
-  }
-
-  .project-list {
-    margin-top: 2rem;
-  }
-
-  .project-project {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 3rem;
-  }
-  
   .project-wrapper {
-    max-width: 500px;
-  }
-
-  .project-img {
-    width: 550px; 
-  }
-
-  .img-right {
-    margin-left: 10rem;
-  }
-
-  .img-left {
-    margin-right: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 600px);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -1,8 +1,12 @@
+#contact {
+  display: grid;
+}
+
 .contact-form-container {
+  width: 100%;
   max-width: 500px;
   margin: auto;
-  display: flex;
-  flex-direction: column;
+  padding: 1rem;
 }
 
 .contact-title {
@@ -14,7 +18,8 @@
 }
 
 .contact-input, .contact-message, .contact-button {
-  width: 500px;
+  display: block;
+  width: 100%;
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 10px;
