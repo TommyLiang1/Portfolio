@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Recipe App",
-    "desc": "This recipe app allows users to look up recipes from theMealDB API and save their favorite recipes",
+    "desc": "This recipe app allows users to look up recipes from theMealDB API and save their favorite recipes.",
     "frameworks": ["React", "CSS", "TheMealDB API"],
     "leftImg": "",
     "rightImg": "/images/recipeapp.jpg",
