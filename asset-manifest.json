@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b16c5314.css",
+    "main.css": "/Portfolio/static/css/main.09ecba73.css",
     "main.js": "/Portfolio/static/js/main.fb5e9cd5.js",
     "static/media/artgallery.jpg": "/Portfolio/static/media/artgallery.5fb8b401cc02cdad0e5b.jpg",
     "static/media/mending.png": "/Portfolio/static/media/mending.2507151f17c2b2fc39f0.png",
     "static/media/github.svg": "/Portfolio/static/media/github.7d6b7d8513e06be0a531dc9303e0bafe.svg",
     "static/media/linkedin.svg": "/Portfolio/static/media/linkedin.c11a51dc5395675c338ae20f84fcfa75.svg",
     "index.html": "/Portfolio/index.html",
-    "main.b16c5314.css.map": "/Portfolio/static/css/main.b16c5314.css.map",
+    "main.09ecba73.css.map": "/Portfolio/static/css/main.09ecba73.css.map",
     "main.fb5e9cd5.js.map": "/Portfolio/static/js/main.fb5e9cd5.js.map"
   },
   "entrypoints": [
-    "static/css/main.b16c5314.css",
+    "static/css/main.09ecba73.css",
     "static/js/main.fb5e9cd5.js"
   ]
 }
