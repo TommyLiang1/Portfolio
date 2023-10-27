@@ -49,10 +49,6 @@
     grid-template-columns: repeat(2, 700px);
     gap: 1rem;
   }
-
-  .about-text {
-    /* max-width: 500px; */
-  }
   
   .about-img {
     margin-right: 2rem;
