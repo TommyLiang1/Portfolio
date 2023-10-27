@@ -5,7 +5,7 @@
     "desc": "This recipe app allows users to look up recipes from theMealDB API and save their favorite recipes.",
     "frameworks": ["React", "CSS", "TheMealDB API"],
     "leftImg": "",
-    "rightImg": "/images/recipeapp.jpg",
+    "rightImg": "/images/recipeapp.JPG",
     "githubUrl": "https://github.com/TommyLiang1/Recipe-App",
     "demoUrl": "https://tommyliang1.github.io/Recipe-App/"
   },
