@@ -32,8 +32,12 @@ const ProjectInfo = (props) => {
         <div className="portfolio-title">{title}</div>
         <div className="portfolio-desc">{desc}</div>
         <div>
-          {frameworks?.map((framework) => {
-            return <span className="portfolio-framework">{framework}</span>;
+          {frameworks?.map((framework, i) => {
+            return (
+              <span key={i} className="portfolio-framework">
+                {framework}
+              </span>
+            );
           })}
         </div>
         <div className="portfolio-link-wrapper">
