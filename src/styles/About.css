@@ -9,15 +9,14 @@
 }
 
 .about-img {
-  width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   height: 350px;
   object-fit: cover;
   border-radius: 5%;
 }
 
 .about-text {
-  min-width: 400px;
+  max-width: 600px;
   text-align: left;
   margin-left: 25px;
   padding: 20px;
@@ -26,33 +25,33 @@
 .about-me {
   color: rgb(0, 156, 218);
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.25rem;
 }
 
 .about-title {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.5rem;
   margin-top: 10px;
 }
 
 .about-desc {
+  width: 100%;
   margin-top: 15px;
   color: #666;
 }
 
 @media (min-width: 1100px) {
   .about-container {
-    max-width: 1000px;
     padding: 15rem 0rem;
   }
 
   .about-wrapper {
-    grid-template-columns: repeat(2, 500px);
-    gap: 4rem;
+    grid-template-columns: repeat(2, 700px);
+    gap: 1rem;
   }
 
   .about-text {
-    max-width: 500px;
+    /* max-width: 500px; */
   }
   
   .about-img {
