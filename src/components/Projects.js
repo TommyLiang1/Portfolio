@@ -4,7 +4,6 @@ import GitHubIcon from "../images/github.svg";
 import projectData from "../data/projectData.json";
 
 const Projects = () => {
-  console.log(projectData);
   return (
     <div id="projects" className="projects-container">
       <div className="project-title">PORTFOLIO</div>
@@ -18,9 +17,8 @@ const Projects = () => {
 export default Projects;
 
 const ProjectInfo = (props) => {
-  const { title, desc, frameworks, githubUrl, demoUrl } = props.project;
-  let { rightImg, leftImg } = props.project;
-  console.log(leftImg + "  " + rightImg);
+  const { title, desc, frameworks, githubUrl, demoUrl, leftImg, rightImg } =
+    props.project;
   return (
     <div className="project-wrapper">
       {leftImg && (
