@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 #home,
 #about,
 #projects,
@@ -17,12 +11,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  color: black;
-  padding: 1rem 2rem;
+  padding: .75rem 5%;
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: white;
+  color: black;
+  /* background-color: #202020; */
+  /* color: white; */
+  z-index: 100;
 }
 
 .nav-title {
@@ -48,7 +45,7 @@
   font-size: 20px;
   font-weight: bold;
   color: inherit;
-  padding: 1.2rem 1.5rem;
+  padding: .75rem 1.5rem;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
 }
@@ -74,7 +71,11 @@
   align-items: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
+  .nav {
+    padding: .75rem 5%;
+  }
+
   #nav-links {
     display: flex;
     flex-direction: column;

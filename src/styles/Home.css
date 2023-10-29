@@ -36,14 +36,21 @@
   width: 35px;
   border-radius: 20%;
   margin-right: 15px;
+  transition: transform 250ms;
+}
+
+.home-icon:hover {
+  transform: translateY(-5px);
 }
 
 .home-img {
+  display: block;
   width: 90%;
   max-width: 600px;
-  height: 450px;
+  min-height: 450px;
+  margin: auto;
   object-fit: cover;
-  border-radius: 5%;    
+  border-radius: 5%;
 }
 
 @media (min-width: 1100px) {
