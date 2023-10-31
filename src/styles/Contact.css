@@ -11,9 +11,9 @@
 
 .contact-title {
   max-width: 500px;
-  color: rgb(0, 156, 218);
+  color: var(--title-color);
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: var(--font-large);
   text-align: left;
 }
 
@@ -25,7 +25,7 @@
   border-radius: 10px;
   font-size: 1.25rem;
   font-family: Poppins;
-  background-color: rgb(247, 246, 254);
+  background-color: #f1f5f9;
 }
 
 .contact-input {

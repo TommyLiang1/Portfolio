@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import LinkedInIcon from "../images/linkedin.svg";
-import GitHubIcon from "../images/github.svg";
 import MendingImage from "../images/mending.png";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -32,7 +30,7 @@ const Home = () => {
   }, [homeTitle, homeDesc, homeLinkedIn, homeGithub, homeImg, inView]);
 
   return (
-    <div id="home" className="home-container">
+    <section id="home">
       <div className="home-main">
         <div className="home-text">
           <motion.div
@@ -66,7 +64,7 @@ const Home = () => {
                 href="https://www.linkedin.com/in/tommyliang131/"
                 target="_blank"
               >
-                <img className="home-icon" src={LinkedInIcon} alt="" />
+                <i className="fa-brands fa-linkedin-in home-icon"></i>
               </a>
             </motion.div>
             <motion.div
@@ -77,7 +75,7 @@ const Home = () => {
             >
               {/* eslint-disable-next-line */}
               <a href="https://github.com/TommyLiang1" target="_blank">
-                <img className="home-icon" src={GitHubIcon} alt="" />
+                <i className="fa-brands fa-github home-icon"></i>
               </a>
             </motion.div>
           </div>
@@ -91,7 +89,7 @@ const Home = () => {
           <img className="home-img" src={MendingImage} alt="" />
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -38,7 +38,7 @@ const Contact = () => {
   }, [contactTitle, contactForm, inView]);
 
   return (
-    <div id="contact">
+    <section id="contact">
       <form ref={form} className="contact-form-container" onSubmit={sendEmail}>
         <motion.div
           ref={ref}
@@ -82,7 +82,7 @@ const Contact = () => {
           </button>
         </motion.div>
       </form>
-    </div>
+    </section>
   );
 };
 

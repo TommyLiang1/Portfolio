@@ -15,12 +15,12 @@
 
 .portfolio-title {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: var(--font-large);
 }
 
 .portfolio-desc {
   margin: 1.5rem auto;
-  color: #666;
+  color: var(--text-color);
   padding: 1.5rem;
   max-width: 500px;
 }
@@ -38,13 +38,14 @@
 
 .portfolio-link-wrapper a {
   text-decoration: none;
-  color: black;
+  color: var(--body-color);
   font-weight: bold;
   margin: 2rem auto;
 }
 
 .portfolio-link {
   display: flex;
+  align-items: center;
   justify-content: center;
   transition: color 250ms ease-in;
   transition: transform 250ms ease-in;
@@ -52,11 +53,11 @@
 
 .portfolio-link:hover {
   transform: translateY(-5px);
-  color: #777;
+  color: var(--text-color);
 }
 
 .portfolio-github-icon {
-  width: 25px;
+  font-size: 1.5rem;
   margin-left: 10px;
 }
 

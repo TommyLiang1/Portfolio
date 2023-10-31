@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
-import GitHubIcon from "../images/github.svg";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { fadeInFromTop } from "./Animations";
-
-import "../styles/ProjectInfo.css";
 
 const ProjectInfo = (props) => {
   const { title, desc, frameworks, githubUrl, demoUrl, leftImg, rightImg } =
@@ -47,11 +44,7 @@ const ProjectInfo = (props) => {
             <a href={githubUrl} target="_blank" rel="noreferrer">
               <div className="portfolio-link">
                 Code
-                <img
-                  className="portfolio-github-icon"
-                  src={GitHubIcon}
-                  alt=""
-                />
+                <i className="fa-brands fa-github portfolio-github-icon"></i>
               </div>
             </a>
           )}

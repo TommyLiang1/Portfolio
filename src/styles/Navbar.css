@@ -1,10 +1,8 @@
-#home,
-#about,
-#projects,
-#contact {
+section {
   scroll-margin-top: 100px;
   min-height: 90vh;
-  font-size: 1.25rem;
+  font-size: var(--font-medium);
+  scroll-snap-align: start;
 }
 
 .nav {
@@ -15,10 +13,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white;
-  color: black;
-  /* background-color: #202020; */
-  /* color: white; */
+  background-color: var(--nav-background);
+  color: var(--nav-color);
   z-index: 100;
 }
 
@@ -39,7 +35,7 @@
   margin: 0 5px;
 }
 
-#nav-links li a {
+.nav-link {
   display: block;
   text-decoration: none;
   font-size: 20px;
@@ -50,16 +46,14 @@
   transition: 0.3s ease-in-out;
 }
 
-#nav-links li a:hover {
-  background-color: #444;
-  color:rgb(188, 253, 253);
-  border-radius: 10px;
+.nav-link:hover {
+  background-color: var(--nav-hover-background);
+  color:var(--nav-hover-color);
 }
 
-#nav-links li a:active {
-  background-color: #444;
-  color: rgb(188, 253, 253);
-  border-radius: 10px;
+.nav-link-active {
+  background-color: var(--body-color);
+  color: var(--nav-active-color);
 }
 
 .mobile {
@@ -67,7 +61,7 @@
 }
 
 #mobile-icon {
-  color: black;
+  color: var(--body-color);
   align-items: center;
 }
 
@@ -82,11 +76,11 @@
     align-items: flex-start;
     justify-content: flex-start;
     position: fixed;
-    top: 76px;
+    top: 70px;
     right: -770px;
     width: 100%;
-    background-color: #aaa;
-    color:black;
+    background-color: var(--body-background);
+    color: var(--body-color);
     border-radius: 3%;
     transition: .5s ease-in-out;
   }
@@ -101,15 +95,15 @@
     margin: 0;
   }
 
-  #nav-links li a {
+  .nav-link {
     width: 100%;
     margin: none;
     padding: none;
   }
 
-  #nav-links li a:hover {
-    color: rgb(188, 253, 253);
-    background-color: #444;
+  .nav-link:hover {
+    color: var(--nav-hover-color);
+    background-color: var(--nav-hover-background);
   }
 
   .mobile {

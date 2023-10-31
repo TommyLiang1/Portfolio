@@ -1,7 +1,7 @@
 .project-title {
-  color: rgb(0, 156, 218);
+  color: var(--title-color);
+  font-size: var(--font-large);
   font-weight: bold;
-  font-size: 1.5rem;
   text-align: center;
   padding: 3rem 0rem;
 }

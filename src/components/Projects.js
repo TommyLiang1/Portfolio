@@ -12,7 +12,7 @@ const Projects = () => {
     if (inView) projectTitle.start("visible");
   }, [projectTitle, inView]);
   return (
-    <div id="projects">
+    <section id="projects">
       <motion.div
         ref={ref}
         animate={projectTitle}
@@ -25,7 +25,7 @@ const Projects = () => {
       {projectData?.map((project) => {
         return <ProjectInfo key={project.id} project={project} />;
       })}
-    </div>
+    </section>
   );
 };
 

@@ -1,3 +1,35 @@
+:root {
+  --font-small: 1rem;
+  --font-medium: 1.25rem;
+  --font-large: 1.5rem;
+
+  --body-background: #f9fafb;
+  --body-color: black;
+  --title-color: rgb(0, 156, 218);
+  --text-color: #777;
+
+  --nav-background: rgba(248, 249, 250, .9);
+  --nav-color: rgb(17, 24, 39);
+
+  --nav-hover-color: rgb(248, 249, 250);
+  --nav-hover-background: rgb(17, 24, 39);
+  --nav-active-color: rgb(188, 253, 253);
+}
+
+[data-theme="dark"] {
+  --body-background: #111827;
+  --body-color: white;
+  --title-color: rgb(0, 156, 218);
+  --text-color: #9ca3af;
+
+  --nav-background: rgba(17, 24, 39, .9);
+  --nav-color: rgb(248, 249, 250);
+
+  --nav-hover-color: rgb(17, 24, 39);
+  --nav-hover-background: rgb(248, 249, 250);
+  --nav-active-color: rgb(0, 156, 218);
+}
+
 * {
   margin: 0;
   padding: 0;

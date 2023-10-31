@@ -15,7 +15,7 @@ const About = () => {
     }
   }, [aboutText, aboutImage, inView]);
   return (
-    <div id="about" className="about-wrapper">
+    <section id="about" className="about-wrapper">
       <motion.img
         ref={ref}
         animate={aboutImage}
@@ -47,7 +47,7 @@ const About = () => {
           be learning and picking up new skills wherever I go.
         </div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 
