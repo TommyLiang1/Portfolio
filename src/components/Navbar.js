@@ -1,6 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { InView } from "react-intersection-observer";
 
 const links = [
   {
@@ -24,33 +23,10 @@ const links = [
 const Navbar = () => {
   const [mobileNavActive, setMobileNavActive] = useState(false);
   const [activeSection, setActiveSection] = useState("Home");
-  const targetRef = useRef([]);
 
   const handleMobileNavClick = () => {
     setMobileNavActive(!mobileNavActive);
   };
-
-  // const observerCallback = (entries) => {
-  //   entries.forEach((entry) => {
-  //     console.log(entry.target.text);
-  //     if (entry.target.text !== activeSection && entry.isIntersecting) {
-  //       setActiveSection(entry.target.text);
-  //     }
-  //   });
-  //   // setActiveSection(entry.isIntersecting);
-  // };
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(observerCallback);
-  //   const currentTarget = targetRef.current;
-  //   if (currentTarget) {
-  //     observer.observe(currentTarget);
-  //   }
-
-  //   return () => {
-  //     if (currentTarget) observer.unobserve(currentTarget);
-  //   };
-  // }, [activeSection, setActiveSection, targetRef]);
 
   return (
     <header>
