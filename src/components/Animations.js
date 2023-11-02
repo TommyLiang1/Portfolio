@@ -27,7 +27,7 @@ export const fadeInFromLeftSmallDelay = {
 
 export const fadeInFromLeftLargeDelay = {
   hidden: { opacity: 0, x: -100 },
-  visible: { opacity: 1, x: 0, transition: { duration: 1, delay: 1 } },
+  visible: { opacity: 1, x: 0, transition: { duration: 1, delay: 0.75 } },
 };
 
 export const fadeSpinIn = {

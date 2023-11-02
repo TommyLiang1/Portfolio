@@ -1,32 +1,56 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { InView } from "react-intersection-observer";
+
+const links = [
+  {
+    name: "Home",
+    hash: "#home",
+  },
+  {
+    name: "About",
+    hash: "#about",
+  },
+  {
+    name: "Projects",
+    hash: "#projects",
+  },
+  {
+    name: "Contact",
+    hash: "#contact",
+  },
+];
 
 const Navbar = () => {
-  const [clicked, setClicked] = useState(false);
+  const [mobileNavActive, setMobileNavActive] = useState(false);
   const [activeSection, setActiveSection] = useState("Home");
+  const targetRef = useRef([]);
 
-  const handleClick = () => {
-    setClicked(!clicked);
+  const handleMobileNavClick = () => {
+    setMobileNavActive(!mobileNavActive);
   };
 
-  const links = [
-    {
-      name: "Home",
-      hash: "#home",
-    },
-    {
-      name: "About",
-      hash: "#about",
-    },
-    {
-      name: "Projects",
-      hash: "#projects",
-    },
-    {
-      name: "Contact",
-      hash: "#contact",
-    },
-  ];
+  // const observerCallback = (entries) => {
+  //   entries.forEach((entry) => {
+  //     console.log(entry.target.text);
+  //     if (entry.target.text !== activeSection && entry.isIntersecting) {
+  //       setActiveSection(entry.target.text);
+  //     }
+  //   });
+  //   // setActiveSection(entry.isIntersecting);
+  // };
+
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(observerCallback);
+  //   const currentTarget = targetRef.current;
+  //   if (currentTarget) {
+  //     observer.observe(currentTarget);
+  //   }
+
+  //   return () => {
+  //     if (currentTarget) observer.unobserve(currentTarget);
+  //   };
+  // }, [activeSection, setActiveSection, targetRef]);
 
   return (
     <header>
@@ -38,7 +62,7 @@ const Navbar = () => {
         <div className="nav-title">Tommy</div>
         <ul
           id="nav-links"
-          className={clicked ? "#nav-links active" : "#nav-links"}
+          className={mobileNavActive ? "#nav-links active" : "#nav-links"}
         >
           {links.map((link) => {
             return (
@@ -63,8 +87,8 @@ const Navbar = () => {
         <div className="mobile">
           <i
             id="mobile-icon"
-            onClick={handleClick}
-            className={clicked ? "fas fa-times" : "fas fa-bars"}
+            onClick={handleMobileNavClick}
+            className={mobileNavActive ? "fas fa-times" : "fas fa-bars"}
           ></i>
         </div>
       </motion.nav>

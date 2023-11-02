@@ -13,7 +13,7 @@
 
   --nav-hover-color: rgb(248, 249, 250);
   --nav-hover-background: rgb(17, 24, 39);
-  --nav-active-color: rgb(188, 253, 253);
+  --nav-active-color: rgb(0, 156, 218);
 }
 
 [data-theme="dark"] {
@@ -27,7 +27,6 @@
 
   --nav-hover-color: rgb(17, 24, 39);
   --nav-hover-background: rgb(248, 249, 250);
-  --nav-active-color: rgb(0, 156, 218);
 }
 
 * {
@@ -35,4 +34,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins;
+}
+
+html {
+  scroll-behavior: smooth;
 }
