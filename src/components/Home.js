@@ -13,6 +13,7 @@ import {
 const Home = () => {
   const homeTitle = useAnimation();
   const homeDesc = useAnimation();
+  const homeName = useAnimation();
   const homeLinkedIn = useAnimation();
   const homeGithub = useAnimation();
   const homeImg = useAnimation();
@@ -23,11 +24,20 @@ const Home = () => {
     if (inView) {
       homeTitle.start("visible");
       homeDesc.start("visible");
+      homeName.start("visible");
       homeLinkedIn.start("visible");
       homeGithub.start("visible");
       homeImg.start("visible");
     }
-  }, [homeTitle, homeDesc, homeLinkedIn, homeGithub, homeImg, inView]);
+  }, [
+    homeTitle,
+    homeDesc,
+    homeName,
+    homeLinkedIn,
+    homeGithub,
+    homeImg,
+    inView,
+  ]);
 
   return (
     <section id="home">
@@ -49,8 +59,17 @@ const Home = () => {
             variants={fadeInFromLeft}
             className="home-desc"
           >
-            Hi, I'm Tommy Liang. A passionate Software Developer based in
-            Brooklyn, New York.
+            Hi, I'm&nbsp;
+            <motion.span
+              ref={ref}
+              animate={homeName}
+              initial="hidden"
+              variants={fadeInFromLeftLargeDelay}
+              className="home-name"
+            >
+              Tommy Liang
+            </motion.span>
+            . A passionate Software Developer based in Brooklyn, New York.
           </motion.div>
           <div className="home-links">
             <motion.div

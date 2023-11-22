@@ -26,6 +26,11 @@
   margin-top: 1rem;
 }
 
+.home-name {
+  font-style: italic;
+  font-weight: bold;
+}
+
 .home-links {
   display: flex;
   margin-top: 1.5rem;
