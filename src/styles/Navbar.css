@@ -1,6 +1,6 @@
 section {
   scroll-margin-top: 100px;
-  min-height: 90vh;
+  min-height: 100vh;
   font-size: var(--font-medium);
   padding: 1rem 0rem;
 }
@@ -9,7 +9,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .75rem 5%;
+  padding: 0.75rem 5%;
   position: fixed;
   top: 0;
   width: 100%;
@@ -41,14 +41,14 @@ section {
   font-size: 20px;
   font-weight: bold;
   color: inherit;
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 10px;
   transition: 0.3s ease-in-out;
 }
 
 .nav-link:hover:not(.nav-link-active) {
   background-color: var(--nav-hover-background);
-  color:var(--nav-hover-color);
+  color: var(--nav-hover-color);
 }
 
 .nav-link-active {
@@ -66,7 +66,7 @@ section {
 
 @media screen and (max-width: 800px) {
   .nav {
-    padding: .75rem 5%;
+    padding: 0.75rem 5%;
   }
 
   #nav-links {
@@ -81,7 +81,7 @@ section {
     background-color: var(--body-background);
     color: var(--body-color);
     border-radius: 3%;
-    transition: .5s ease-in-out;
+    transition: 0.5s ease-in-out;
   }
 
   #nav-links.active {
