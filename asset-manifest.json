@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.fd88f997.css",
-    "main.js": "/Portfolio/static/js/main.6ba861ee.js",
+    "main.css": "/Portfolio/static/css/main.06d9999d.css",
+    "main.js": "/Portfolio/static/js/main.906612b3.js",
     "static/media/mending.png": "/Portfolio/static/media/mending.2507151f17c2b2fc39f0.png",
     "index.html": "/Portfolio/index.html",
-    "main.fd88f997.css.map": "/Portfolio/static/css/main.fd88f997.css.map",
-    "main.6ba861ee.js.map": "/Portfolio/static/js/main.6ba861ee.js.map"
+    "main.06d9999d.css.map": "/Portfolio/static/css/main.06d9999d.css.map",
+    "main.906612b3.js.map": "/Portfolio/static/js/main.906612b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd88f997.css",
-    "static/js/main.6ba861ee.js"
+    "static/css/main.06d9999d.css",
+    "static/js/main.906612b3.js"
   ]
 }
