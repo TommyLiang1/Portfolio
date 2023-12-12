@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import MendingImage from "../images/mending.png";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import {
@@ -7,11 +6,11 @@ import {
   fadeInFromLeft,
   fadeInFromLeftSmallDelay,
   fadeInFromLeftLargeDelay,
-  fadeSpinIn,
 } from "./Animations";
 
 const Home = () => {
-  const homeTitle = useAnimation();
+  const homeTitleName = useAnimation();
+  const homeTitleRole = useAnimation();
   const homeDesc = useAnimation();
   const homeName = useAnimation();
   const homeLinkedIn = useAnimation();
@@ -22,7 +21,8 @@ const Home = () => {
 
   useEffect(() => {
     if (inView) {
-      homeTitle.start("visible");
+      homeTitleName.start("visible");
+      homeTitleRole.start("visible");
       homeDesc.start("visible");
       homeName.start("visible");
       homeLinkedIn.start("visible");
@@ -30,7 +30,8 @@ const Home = () => {
       homeImg.start("visible");
     }
   }, [
-    homeTitle,
+    homeTitleName,
+    homeTitleRole,
     homeDesc,
     homeName,
     homeLinkedIn,
@@ -42,71 +43,70 @@ const Home = () => {
   return (
     <section id="home">
       <div className="home-main">
-        <div className="home-text">
-          <motion.div
-            ref={ref}
-            animate={homeTitle}
-            initial="hidden"
-            variants={fadeInFromTop}
-            className="home-title"
-          >
-            Full-Stack Developer
-          </motion.div>
-          <motion.div
-            ref={ref}
-            animate={homeDesc}
-            initial="hidden"
-            variants={fadeInFromLeft}
-            className="home-desc"
-          >
-            Hi, I'm&nbsp;
-            <motion.span
-              ref={ref}
-              animate={homeName}
-              initial="hidden"
-              variants={fadeInFromLeftLargeDelay}
-              className="home-name"
-            >
-              Tommy Liang
-            </motion.span>
-            . A passionate Software Developer based in Brooklyn, New York.
-          </motion.div>
-          <div className="home-links">
-            <motion.div
-              ref={ref}
-              animate={homeLinkedIn}
-              initial="hidden"
-              variants={fadeInFromLeftLargeDelay}
-            >
-              {/* eslint-disable-next-line */}
-              <a
-                href="https://www.linkedin.com/in/tommyliang131/"
-                target="_blank"
-              >
-                <i className="fa-brands fa-linkedin-in home-icon"></i>
-              </a>
-            </motion.div>
-            <motion.div
-              ref={ref}
-              animate={homeLinkedIn}
-              initial="hidden"
-              variants={fadeInFromLeftSmallDelay}
-            >
-              {/* eslint-disable-next-line */}
-              <a href="https://github.com/TommyLiang1" target="_blank">
-                <i className="fa-brands fa-github home-icon"></i>
-              </a>
-            </motion.div>
-          </div>
-        </div>
         <motion.div
           ref={ref}
-          animate={homeImg}
+          animate={homeTitleName}
           initial="hidden"
-          variants={fadeSpinIn}
+          variants={fadeInFromTop}
+          className="home-title-name"
         >
-          <img className="home-img" src={MendingImage} alt="" />
+          Tommy Liang
         </motion.div>
+        <motion.div
+          ref={ref}
+          animate={homeTitleRole}
+          initial="hidden"
+          variants={fadeInFromTop}
+          className="home-title-role"
+        >
+          Software Developer
+        </motion.div>
+        <motion.div
+          ref={ref}
+          animate={homeDesc}
+          initial="hidden"
+          variants={fadeInFromLeft}
+          className="home-desc"
+        >
+          Hi, I'm&nbsp;
+          <motion.span
+            ref={ref}
+            animate={homeName}
+            initial="hidden"
+            variants={fadeInFromLeftLargeDelay}
+            className="home-name"
+          >
+            Tommy Liang
+          </motion.span>
+          . A passionate Software Developer based in Brooklyn, New York.
+        </motion.div>
+        <div className="home-links">
+          <motion.div
+            ref={ref}
+            animate={homeLinkedIn}
+            initial="hidden"
+            variants={fadeInFromLeftLargeDelay}
+          >
+            {/* eslint-disable-next-line */}
+            <a
+              href="https://www.linkedin.com/in/tommyliang131/"
+              target="_blank"
+            >
+              <i className="fa-brands fa-linkedin-in home-icon"></i>
+            </a>
+          </motion.div>
+          <motion.div
+            ref={ref}
+            animate={homeLinkedIn}
+            initial="hidden"
+            variants={fadeInFromLeftSmallDelay}
+          >
+            {/* eslint-disable-next-line */}
+            <a href="https://github.com/TommyLiang1" target="_blank">
+              <i className="fa-brands fa-github home-icon"></i>
+            </a>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

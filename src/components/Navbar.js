@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import Theme from "./Theme";
 
 const links = [
   {
@@ -40,6 +41,7 @@ const Navbar = () => {
           id="nav-links"
           className={mobileNavActive ? "#nav-links active" : "#nav-links"}
         >
+          <Theme />
           {links.map((link) => {
             return (
               <li key={link.hash}>
@@ -65,7 +67,7 @@ const Navbar = () => {
             id="mobile-icon"
             onClick={handleMobileNavClick}
             className={mobileNavActive ? "fas fa-times" : "fas fa-bars"}
-          ></i>
+          />
         </div>
       </motion.nav>
     </header>

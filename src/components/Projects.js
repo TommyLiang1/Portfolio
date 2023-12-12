@@ -20,7 +20,7 @@ const Projects = () => {
         variants={fadeIn}
         className="project-title"
       >
-        PORTFOLIO
+        Portfolio
       </motion.div>
       {projectData?.map((project) => {
         return <ProjectInfo key={project.id} project={project} />;

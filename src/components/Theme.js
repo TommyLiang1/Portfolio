@@ -28,11 +28,7 @@ const Theme = () => {
 
   return (
     <div className="theme-container" onClick={toggleTheme}>
-      {theme === "light" ? (
-        <i className="fa-solid fa-sun" style={{ padding: ".2rem .5rem" }}></i>
-      ) : (
-        <i className="fa-solid fa-moon" style={{ padding: ".2rem .75rem" }}></i>
-      )}
+      <i className="fa-solid fa-moon"></i>
     </div>
   );
 };

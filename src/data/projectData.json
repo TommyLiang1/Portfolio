@@ -25,7 +25,7 @@
     "desc": "Spotify++ is a web app that allows users create and manage their own playlist of mp3 files. This website is created with AWS Amplify and S3.",
     "frameworks": ["React", "AWS", "CSS"],
     "leftImg": "",
-    "rightImg": "/images/mending.png",
+    "rightImg": "/images/spotify.png",
     "githubUrl": "https://github.com/TommyLiang1/cloud_computing_project",
     "demoUrl": ""
   },
