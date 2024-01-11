@@ -8,7 +8,7 @@
   --title-color: rgb(0, 156, 218);
   --text-color: #777;
 
-  --nav-background: rgba(248, 249, 250, .9);
+  --nav-background: rgba(248, 249, 250, 0.9);
   --nav-color: rgb(17, 24, 39);
 
   --nav-hover-color: rgb(248, 249, 250);
@@ -22,7 +22,7 @@
   --title-color: rgb(0, 156, 218);
   --text-color: #9ca3af;
 
-  --nav-background: rgba(17, 24, 39, .9);
+  --nav-background: rgba(17, 24, 39, 0.9);
   --nav-color: rgb(248, 249, 250);
 
   --nav-hover-color: rgb(17, 24, 39);
@@ -34,6 +34,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins;
+  transition: color 0.1s ease-in, background-color 0.3s ease-in;
 }
 
 html {

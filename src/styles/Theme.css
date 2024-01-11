@@ -4,6 +4,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  transition: all 0.3s ease-in;
 }
 
 .theme-container:hover {
