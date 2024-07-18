@@ -1,7 +1,7 @@
 {
     "name": "liang_tommy_portfolio",
     "version": "0.1.0",
-    "homepage": "https://tommyliangswe.com/",
+    "homepage": "https://tommyliangswe.com",
     "private": true,
     "dependencies": {
         "@emailjs/browser": "^3.11.0",
